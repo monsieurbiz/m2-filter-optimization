@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+ * This file is part of Mbiz_FilterOptimization for Magento.
+ *
+ * @license All rights reserved
+ * @author Maxime Huran <m.huran@monsieurbiz.com> <@MaximeHuran>
+ * @category Mbiz
+ * @package Mbiz_FilterOptimization
+ * @copyright Copyright (c) 2018 Monsieur Biz (https://monsieurbiz.com/)
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <!-- Plugins to optimize filters on category page -->
+    <type name="Magento\Catalog\Model\Layer\FilterList">
+        <plugin name="Mbiz_FilterOptimization_Plugin_Model_Layer_FilterList" type="Mbiz\FilterOptimization\Plugin\Model\Layer\FilterList" />
+    </type>
+    <type name="Magento\Framework\Search\Request\Cleaner">
+        <plugin name="Mbiz_FilterOptimization_Plugin_Framework_Search_Request_Cleaner" type="Mbiz\FilterOptimization\Plugin\Framework\Search\Request\Cleaner" />
+    </type>
+</config>

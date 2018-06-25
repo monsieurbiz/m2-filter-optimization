@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * This file is part of Mbiz_FilterOptimization for Magento.
+ *
+ * @license All rights reserved
+ * @author Maxime Huran <m.huran@monsieurbiz.com> <@MaximeHuran>
+ * @category Mbiz
+ * @package Mbiz_FilterOptimization
+ * @copyright Copyright (c) 2018 Monsieur Biz (https://monsieurbiz.com/)
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
+    <module name="Mbiz_FilterOptimization" setup_version="1.0.0">
+        <sequence>
+            <module name="Magento_Catalog" />
+        </sequence>
+    </module>
+</config>
